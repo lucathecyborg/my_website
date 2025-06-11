@@ -44,7 +44,6 @@ a {
 .main {
   display: flex;
   background-color: #1f2937;
-  justify-self: space-between;
   color: white;
   padding: 100px;
 }
@@ -72,6 +71,10 @@ a {
 .skills {
   padding: 150px;
   text-align: center;
+}
+
+.main img {
+  border-radius: 400px;
 }
 
 .skills h2 {
@@ -111,10 +114,17 @@ a {
 }
 .hero {
   justify-content: center;
+  height: 500px;
   align-items: center;
-  height: 100vh;
   background-color: #1f2937;
 }
 .hero h1 {
   max-width: 800px;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(198, 195, 195);
 }
