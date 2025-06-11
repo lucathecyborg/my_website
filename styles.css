@@ -36,62 +36,67 @@
   color: white;
 }
 
-a{
-    text-decoration: none;
-    color: rgb(241, 230, 230);
+a {
+  text-decoration: none;
+  color: rgb(241, 230, 230);
 }
 
-.main{
-    display: flex;
-    background-color: #1f2937;
-    justify-self: space-between;
-    color: white;
-    padding: 100px;
+.main {
+  display: flex;
+  background-color: #1f2937;
+  justify-self: space-between;
+  color: white;
+  padding: 100px;
 }
 
-.main h1{
-    font-size: 80px;
-    font-weight: bold;
-    margin: 0px;
+.main h1 {
+  font-size: 80px;
+  font-weight: bold;
+  margin: 0px;
 }
-.main p{
-    font-size: 25px;
-    margin: 20px 0px;
+.main p {
+  font-size: 25px;
+  margin: 20px 0px;
 }
-.main button{
-    background-color: #2194e7;
-    color: white;
-    border: none;
-    padding: 10px 25px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 20px;
-    text-align: center;
+.main button {
+  background-color: #2194e7;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
 }
 
-.skills{
+.skills {
   padding: 150px;
   text-align: center;
-
 }
 
-.skills h2{
+.skills h2 {
   font-size: 50px;
   font-weight: bold;
   padding: 20px;
 }
-.item{
+.item {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.box{
+.box {
+  color: #000000;
+}
+
+.box p {
+  font-family: lucida console;
+  overflow-wrap: break-word;
+  max-width: 400px;
   text-align: center;
 }
 
-.image-box{
-
+.image-box {
   border-radius: 50px;
   height: 300px;
   width: 300px;
@@ -100,7 +105,5 @@ a{
   display: flex;
   align-items: center;
   justify-content: center;
-
   overflow: hidden;
-
 }
