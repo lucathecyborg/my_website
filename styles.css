@@ -94,6 +94,7 @@ a {
   overflow-wrap: break-word;
   max-width: 400px;
   text-align: center;
+  margin: 10px;
 }
 
 .image-box {
@@ -101,9 +102,19 @@ a {
   height: 300px;
   width: 300px;
   border: none;
-  margin: 10px;
+  margin: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  gap: 20px;
+}
+.hero {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1f2937;
+}
+.hero h1 {
+  max-width: 800px;
 }
