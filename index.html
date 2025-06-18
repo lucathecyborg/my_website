@@ -16,7 +16,7 @@
         <a href="#">Contact</a>
       </nav>
     </header>
-    <selection class="main">
+    <section class="main">
       <div class="hero">
         <h1>Welcome to Our Website</h1>
         <p>Your journey to excellence starts here.</p>
@@ -24,62 +24,86 @@
           <a href="https://github.com/lucathecyborg">Super epic github</a>
         </button>
       </div>
+      <div class="hero_image">
       <img src="temp.png" alt="temp" height="400px"></img>
-    </selection>
+    </div>
+    </section>
 
     <selection class="skills">
       <h2>My skills</h2>
       <div class="item">
         <div class="box">
           <div class="image-box">
-            <img src="logos/c++.png" alt="c++" height="300" />
+            <a href="https://en.wikipedia.org/wiki/C%2B%2B" alt="c++ wiki">
+            <img src="logos/c++.png" alt="c++ logo" height="300" />
+          </a>
           </div>
           <p>Game/app development with c++</p>
         </div>
         <div class="box">
           <div class="image-box">
-            <img src="logos/html.png" alt="logo" height="250" />
+            <a href="https://en.wikipedia.org/wiki/HTML" alt="html wiki">
+            <img src="logos/html.png" alt="html logo" height="250" />
+          </a>
           </div>
           <p>Website development with HTML</p>
         </div>
         <div class="box">
           <div class="image-box">
-            <img src="logos/css.png" alt="logo" />
+            <a href="https://en.wikipedia.org/wiki/CSS" alt="css wiki">
+            <img src="logos/css.png" alt="css logo" />
+            </a>
           </div>
           <p>Website development with CSS</p>
         </div>
         <div class="box">
           <div class="image-box">
-            <img src="logos/javascript.png" alt="javascript" height="250" />
+            <a href="https://en.wikipedia.org/wiki/JavaScript" alt="javascript wiki">
+            <img src="logos/javascript.png" alt="javascript logo" height="250" />
+          </a>
           </div>
           <p>Website development with JavaScript</p>
         </div>
         <div class="box">
           <div class="image-box">
+            <a href="https://en.wikipedia.org/wiki/Arduino" alt="arduino wiki">
             <img src="logos/arduino.png" alt="arduino" height="220" />
+          </a>
           </div>
           <p>PCB design and use of microcontrollers</p>
         </div>
         <div class="box">
           <div class="image-box">
+            <a href="https://firstglobal.si" alt="first global slovenia website">
             <img src="logos/robot.png" alt="robot" height="220" />
+          </a>
           </div>
           <p>Experience with robotics</p>
         </div>
         <div class="box">
           <div class="image-box">
+            <a href="https://en.wikipedia.org/wiki/Raspberry_Pi" alt="Raspberry Pi wiki">
             <img src="logos/raspberry.png" alt="raspberry" height="250" />
+          </a>
           </div>
           <p>Development using Raspberry Pi</p>
         </div>
       </div>
     </selection>
-    <selection class="projects">
-      <div class="wheel">
-        <div>wheel</div>
-        <div>wheel</div>
-        <div>wheel</div>
-      </div>
-    </selection>
+<section class="wheel">
+    <h2>Some of my projects</h2>
+
+
+    <div id="carousel" class="carousel">
+      <button id="carousel-left">&#8592;</button>
+      <img id="carousel-image" src="" alt="carousel image" height="180" />
+      <div id="carousel-text"></div>
+      <button id="carousel-right">&#8594;</button>
+    </div>
+  </section>
+
+    <script src="carousel.js"></script>
   </body>
 </html>
+
+

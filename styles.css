@@ -44,8 +44,10 @@ a {
 .main {
   display: flex;
   background-color: #1f2937;
+  justify-content: space-between;
   color: white;
   padding: 100px;
+  min-height: 90vh;
 }
 
 .main h1 {
@@ -90,6 +92,8 @@ a {
 
 .box {
   color: #000000;
+  transition: all 0.3s;
+  border-radius: 110px;
 }
 
 .box p {
@@ -101,7 +105,6 @@ a {
 }
 
 .image-box {
-  border-radius: 50px;
   height: 300px;
   width: 300px;
   border: none;
@@ -122,9 +125,68 @@ a {
   max-width: 800px;
 }
 
+.hero_image {
+  height: fit-content;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 40px;
+}
 .projects {
   display: flex;
+  flex: 1;
   justify-content: center;
-  align-items: center;
+  align-items: space-between;
   background-color: rgb(198, 195, 195);
+  flex-wrap: wrap;
+}
+
+.box:hover {
+  transform: scale(1.1);
+}
+
+.wheel {
+  font-size: 40px;
+  font-weight: bold;
+  padding: 50px;
+  text-align: center;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background: #fff;
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  max-width: 600px;
+  margin: 0 auto;
+}
+.carousel button {
+  font-size: 2rem;
+  background: #eee;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.carousel button:hover {
+  background: #ddd;
+}
+#carousel-image {
+  display: block;
+  max-width: 250px;
+  max-height: 250px;
+  border-radius: 8px;
+  background: #f0f0f0;
+  object-fit: contain;
+}
+#carousel-text {
+  min-width: 150px;
+  max-width: 250px;
+  font-size: 1.1rem;
+  color: #333;
 }
