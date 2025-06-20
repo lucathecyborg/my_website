@@ -160,6 +160,7 @@ a {
   gap: 24px;
   background: #fff;
   padding: 50px;
+  margin: 150;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
   max-width: fit-content;
