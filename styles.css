@@ -11,6 +11,7 @@
   background-color: #1f2937;
   padding: 20px 100px;
   color: white;
+  min-width: 130vh;
 }
 
 .logo {
@@ -47,7 +48,8 @@ a {
   justify-content: space-between;
   color: white;
   padding: 100px;
-  min-height: 90vh;
+  min-height: 75vh;
+  min-width: fit-content;
 }
 
 .main h1 {
@@ -130,7 +132,7 @@ a {
   flex: 1;
   display: flex;
   justify-content: flex-end;
-  padding-right: 40px;
+  padding-right: 30px;
 }
 .projects {
   display: flex;
@@ -160,7 +162,7 @@ a {
   padding: 50px;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
-  max-width: 600px;
+  max-width: fit-content;
   margin: 0 auto;
 }
 .carousel button {
@@ -178,15 +180,83 @@ a {
 }
 #carousel-image {
   display: block;
-  max-width: 250px;
-  max-height: 250px;
-  border-radius: 8px;
-  background: #f0f0f0;
-  object-fit: contain;
+  width: 500px;
+  height: 500px;
+  border-radius: 50px;
+  background: #d41717;
+  object-fit: fill;
 }
+
+.carousel-text-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 300px;
+  max-width: 300px;
+}
+
 #carousel-text {
-  min-width: 150px;
-  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  max-width: 300px;
   font-size: 1.1rem;
   color: #333;
+  cursor: pointer;
+}
+#carousel-head {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 4px;
+  text-align: center;
+  padding-left: 45px;
+  color: #222;
+}
+.carousel-slide-out-left {
+  animation: slideOutLeft 0.4s forwards;
+}
+.carousel-slide-in-right {
+  animation: slideInRight 0.4s forwards;
+}
+.carousel-slide-out-right {
+  animation: slideOutRight 0.4s forwards;
+}
+.carousel-slide-in-left {
+  animation: slideInLeft 0.4s forwards;
+}
+
+@keyframes slideOutLeft {
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideOutRight {
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
