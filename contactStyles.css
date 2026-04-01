@@ -1,0 +1,40 @@
+#contactFormDiv{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   height: 100vh;
+   width: 100%;
+ 
+}
+
+#contactForm{
+    border-radius:40px ;
+    padding-bottom: 20px;
+   
+    text-align: center;
+    color: white;
+    background-color: #454b55;
+    width: 50%;
+}
+
+input{
+    margin: 10px;
+    border-radius: 20px;
+    width: 80%;
+    height: 10%;
+    padding-left: 0px;
+}
+
+form{
+    display: flex;
+}
+#inputs{
+    width: 90%;
+}
+#text{
+    margin-left: 10%;
+    font-size: large;
+    margin-right: 0%;
+    height: 10%;
+}
